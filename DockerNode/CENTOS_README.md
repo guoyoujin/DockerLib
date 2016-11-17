@@ -1,5 +1,5 @@
 # make docker node images
-
+### Software environment configuration
 git version 1.8.3.1
 Python 2.7.5
 gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC)
@@ -22,9 +22,6 @@ docker build -t centos7 .
 ```shell
 docker run --name node5.10.1 -i -t centos7 bash
 ```
-
-上面重点是－v这个命令，翻译过来就是 docker run 了一个名叫docker_node5.10.1的镜像，镜像源为centos7
-目录映射是从宿主机的/root/docker_node5.10.1文件影射到了镜像里面的/home目录下.
 
 ### 4. install wget
 ```shell
@@ -94,10 +91,10 @@ exit ###先退出镜像
 
 docker commit -m "node 5.10.1" docker_node5.10.1 docker_node5.10.1 
 ```
-第一个docker_node5.10.1是制作的镜像名，第二个是生成的新的镜像名字
+first docker_node5.10.1 is images name，second is new Images name
 
 ### 15.export images
 ```shell
 sudo docker save -o 20161114_docker_node5.10.1.tar docker_node5.10.1
 ```
-第一个20161114_docker_node5.10.1.tar是导出的文件名，docker_node5.10.1镜像名字
+first 20161114_docker_node5.10.1.tar is export Images Name，docker_node5.10.1 is Images name
