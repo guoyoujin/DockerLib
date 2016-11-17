@@ -39,7 +39,7 @@ wget -c https://github.com/guoyoujin/DockerLib/blob/master/python/Python-2.7.5.t
 
 ### 6.tar file
 ```shell
-tar xzvf Python-* && Python-*
+tar xzvf Python-* && cd Python-*
 ```
 
 ### 7.compiling & install

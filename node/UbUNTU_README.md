@@ -35,7 +35,7 @@ wget -c https://github.com/guoyoujin/DockerLib/blob/master/node/node-v6.9.1.tar.
 
 ### 6.tar file
 ```shell
-tar xzvf node-v* && node-v*
+tar xzvf node-v* && cd node-v*
 ```
 
 ### 7.compiling & install

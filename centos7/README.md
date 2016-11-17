@@ -12,3 +12,5 @@ docker build -t centos7 .
 
 `centos7`is run image name,You can customize it
 
+Python 2.7.5
+
