@@ -1,5 +1,8 @@
 # If below 1,2,3,4 Environment you have, then start directly from the 5 can be
+## Automatic Install
+<a href ="https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server">link</a>
 
+## Manual Install
 ### 1. install wget
 ```shell
 apt-get update

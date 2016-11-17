@@ -1,4 +1,8 @@
 # If below 1,2,3,4 Environment you have, then start directly from the 5 can be
+## Automatic Install
+<a href ="http://askubuntu.com/questions/101591/how-do-i-install-python-2-7-2-on-ubuntu">link</a>
+
+## Manual Install
 ### 1. install wget
 ```shell
 apt-get update
