@@ -1,3 +1,5 @@
+### If below 1,2,3,4 Environment you have, then start directly from the 5 can be
+
 # 1. install wget
 ```shell
 apt-get update
@@ -21,12 +23,16 @@ apt-get install gcc gcc-c++
 
 # 5.download
 ```shell
-wget -c install gcc gcc-c++
+wget -c https://github.com/guoyoujin/DockerLib/blob/master/node/node-v5.10.1.tar.gz?raw=true -O node-v5.10.1.tar.gz
+
+or
+
+wget -c https://github.com/guoyoujin/DockerLib/blob/master/node/node-v6.9.1.tar.gz?raw=true -O node-v6.9.1.tar.gz
 ```
 
 # 6.tar file
 ```shell
-tar xzvf Python-* && Python-*
+tar xzvf node-v* && node-v*
 ```
 
 # 7.compiling & install

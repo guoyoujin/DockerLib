@@ -1,3 +1,4 @@
+### If below 1,2,3,4 Environment you have, then start directly from the 5 can be
 # 1. install wget
 ```shell
 yum update
@@ -21,7 +22,15 @@ yum install gcc gcc-c++
 
 # 5.download
 ```shell
-wget -c install gcc gcc-c++
+wget -c https://github.com/guoyoujin/DockerLib/blob/master/python/Python-2.7.12.tgz?raw=true -O Python-2.7.12.tgz
+
+or
+
+wget -c https://github.com/guoyoujin/DockerLib/blob/master/python/Python-2.7.6.tgz?raw=true -O Python-2.7.6.tgz
+
+or
+
+wget -c https://github.com/guoyoujin/DockerLib/blob/master/python/Python-2.7.5.tgz?raw=true -O Python-2.7.5.tgz
 ```
 
 # 6.tar file
