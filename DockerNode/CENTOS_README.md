@@ -6,55 +6,55 @@ gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC)
 node v5.10.1
 npm 3.8.3
 
-### 1.new file
+### 1.download centos7
 ```shell
-mkdir docker_node5.10.1 && cd docker_node5.10.1
-```
+wget -c https://raw.githubusercontent.com/guoyoujin/DockerLib/master/centos7/Dockerfile
 
-### 2.download node & centos7
-```shell
 wget https://github.com/guoyoujin/DockerLib/blob/master/centos7/CentOS-7-20140926_1219-docker.tar.xz?raw=true -O CentOS-7-20140926_1219-docker.tar.xz
-
-wget -c https://github.com/guoyoujin/DockerLib/blob/master/node/node-v5.10.1.tar.gz?raw=true -O node-v5.10.1.tar.gz
 ```
 
-###  3.build centos7 images
+###  2.build centos7 images
 ```shell
 docker build -t centos7 .
 ```
 
-### 4.new docker images docker_node5.10.1
+### 3.new docker images docker_node5.10.1
 ```shell
-docker run --name docker_node5.10.1 -v /root/docker_node5.10.1/:/home -i -t centos7 bash
+docker run --name node5.10.1 -i -t centos7 bash
 ```
 
 上面重点是－v这个命令，翻译过来就是 docker run 了一个名叫docker_node5.10.1的镜像，镜像源为centos7
 目录映射是从宿主机的/root/docker_node5.10.1文件影射到了镜像里面的/home目录下.
 
-### 5. install wget
+### 4. install wget
 ```shell
 yum update
 yum install wget
 ```
 
-### 6.install make
+### 5.install make
 ```shell
 yum install make
 ```
 
-### 7.install tar
+### 6.install tar
 ```shell
 yum install tar
 ```
 
-### 8.install gcc gcc-c++
+### 7.install gcc gcc-c++
 ```shell
 yum install gcc gcc-c++
 ```
 
-### 9.install git
+### 8.install git
 ```shell
 yum install git
+```
+
+### 9. download node file
+```shell
+cd /home && wget -c https://github.com/guoyoujin/DockerLib/blob/master/node/node-v5.10.1.tar.gz?raw=true -O node-v5.10.1.tar.gz
 ```
 
 ### 10.tar file
