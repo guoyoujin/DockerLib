@@ -27,9 +27,9 @@ apt-get install gcc gcc-c++
 ### 5.download
 ```shell
 wget -c https://github.com/guoyoujin/DockerLib/blob/master/node/node-v5.10.1.tar.gz?raw=true -O node-v5.10.1.tar.gz
-
+```
 or
-
+```
 wget -c https://github.com/guoyoujin/DockerLib/blob/master/node/node-v6.9.1.tar.gz?raw=true -O node-v6.9.1.tar.gz
 ```
 
@@ -47,5 +47,5 @@ make install
 
 ### 8.Check the version
 ```
-python --version
+node --version
 ```

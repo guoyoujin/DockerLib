@@ -27,13 +27,13 @@ apt-get install gcc gcc-c++
 ### 5.download
 ```shell
 wget -c https://github.com/guoyoujin/DockerLib/blob/master/python/Python-2.7.12.tgz?raw=true -O Python-2.7.12.tgz
-
+```
 or
-
+```shell
 wget -c https://github.com/guoyoujin/DockerLib/blob/master/python/Python-2.7.6.tgz?raw=true -O Python-2.7.6.tgz
-
+```
 or
-
+```shell
 wget -c https://github.com/guoyoujin/DockerLib/blob/master/python/Python-2.7.5.tgz?raw=true -O Python-2.7.5.tgz
 ```
 
