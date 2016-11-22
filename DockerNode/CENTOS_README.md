@@ -81,9 +81,15 @@ npm install -g node-gyp
 
 npm install -g pm2
 
+npm install -g bower
+
+npm install -g coffee-script
+
 ```
 <a href="https://github.com/nodejs/node-gyp">node-gyp</a>
 <a href="https://github.com/Unitech/pm2">pm2</a>
+<a href="https://github.com/bower/bower">bower</a>
+<a href="http://coffeescript.org/">coffeescript</a>
 
 ### 14.commit images
 ```shell
