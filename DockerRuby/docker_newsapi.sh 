@@ -1,0 +1,5 @@
+#! /bin/bash
+cd /system/rails/newsapi&&git checkout -b test&&git pull origin test
+sudo docker stop newsapi
+sudo docker rm newsapi
+sudo docker run -d --name newsapi -v /system/rails/newsapi:/home -p 3000:3000 ruby /home/start.sh 
