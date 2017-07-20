@@ -1,4 +1,5 @@
 # ruby images base on centos7
+# 此脚步有我公司运营大牛周围所写，非常感谢！
 #
 # incloud: ruby 2.3.1 rails 5.0.0
 # use: docker run -d --name you_app_name -v /you_path:/home -p port:3000 you_image_name
