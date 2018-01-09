@@ -1,0 +1,39 @@
+version: '2'
+services:
+
+    etcd1:
+        extends:
+            file: base.yml
+            service: etcd-base
+        ports:
+             - 23791:2379
+             - 23801:2380
+        environment:
+            ETCD_NAME: node1
+            ETCD_DATA_DIR: /etcd-data/etcd1.etcd
+            ETCD_INITIAL_ADVERTISE_PEER_URLS: http://etcd1:2380
+            ETCD_ADVERTISE_CLIENT_URLS: http://etcd1:2379
+    etcd2:
+        extends:
+            file: base.yml
+            service: etcd-base
+        ports:
+            - 23792:2379
+            - 23802:2380
+        environment:
+            ETCD_NAME: node2
+            ETCD_DATA_DIR: /etcd-data/etcd2.etcd
+            ETCD_INITIAL_ADVERTISE_PEER_URLS: http://etcd2:2380
+            ETCD_ADVERTISE_CLIENT_URLS: http://etcd2:2379
+    etcd3:
+        extends:
+            file: base.yml
+            service: etcd-base
+        ports:
+            - 23793:2379
+            - 23803:2380
+        environment:
+            ETCD_NAME: node3
+            ETCD_DATA_DIR: /etcd-data/etcd3.etcd
+            ETCD_INITIAL_ADVERTISE_PEER_URLS: http://etcd3:2380
+            ETCD_ADVERTISE_CLIENT_URLS: http://etcd3:2379

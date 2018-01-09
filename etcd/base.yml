@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+
+    etcd-base:
+        image: quay.io/coreos/etcd:v3.2.5
+        volumes:
+          - ./certs/:/srv/
+          - /srv/docker/etcd:/etcd-data
+        environment:
+            ETCDCTL_API: 3
+            ETCD_DEBUG: 1
+            ETCD_INITIAL_CLUSTER: node3=http://etcd3:2380,node1=http://etcd1:2380,node2=http://etcd2:2380
+            ETCD_INITIAL_CLUSTER_STATE: new
+            ETCD_INITIAL_CLUSTER_TOKEN: etcd-ftw
+            ETCD_LISTEN_CLIENT_URLS: http://0.0.0.0:2379
+            ETCD_LISTEN_PEER_URLS: http://0.0.0.0:2380
+            ETCD_ADVERTISE_CLIENT_URLS: http://etcd1:2379
+        restart: unless-stopped # Sometimes it starts too fast, cheap way of retrying...
