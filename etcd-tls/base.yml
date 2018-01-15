@@ -1,0 +1,26 @@
+version: '2'
+
+services:
+
+    etcd-base:
+        image: quay.io/coreos/etcd:v3.2.5
+        volumes:
+          - "${HOST_ETCD_CERTS_PATH}:${DOCKER_ETCD_CERTS_PATH}"
+          - "${HOST_ETCD_DATA_PATH}:${DOCKER_ETCD_DATA_PATH}"
+        environment:
+            ETCDCTL_API: 3
+            ETCD_DEBUG: 1
+            ETCD_INITIAL_CLUSTER: node3=https://etcd3:2380,node1=https://etcd1:2380,node2=https://etcd2:2380
+            ETCD_INITIAL_CLUSTER_STATE: new
+            ETCD_INITIAL_CLUSTER_TOKEN: etcd-ftw
+            ETCD_LISTEN_CLIENT_URLS: https://0.0.0.0:2379
+            ETCD_LISTEN_PEER_URLS: https://0.0.0.0:2380
+            ETCD_CERT_FILE: "${DOCKER_ETCD_CERTS_PATH}/server.pem"
+            ETCD_KEY_FILE: "${DOCKER_ETCD_CERTS_PATH}/server-key.pem"
+            ETCD_PEER_TRUSTED_CA_FILE: "${DOCKER_ETCD_CERTS_PATH}/ca.pem"
+            ETCD_PEER_CLIENT_CERT_AUTH: 1
+            ETCD_CLIENT_CERT_TLS: 1
+            ETCD_AUTO_TLS: 1
+            ETCD_DEBUG: 1
+            ETCD_LOG_PACKAGE_LEVELS: etcdserver=WARNING,security=DEBUG
+        restart: unless-stopped # Sometimes it starts too fast, cheap way of retrying...

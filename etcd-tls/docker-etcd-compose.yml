@@ -1,0 +1,45 @@
+version: '2'
+services:
+
+    etcd1:
+        extends:
+            file: base.yml
+            service: etcd-base
+        ports:
+             - 23791:2379
+             - 23801:2380
+        environment:
+            ETCD_NAME: node1
+            ETCD_DATA_DIR: "${DOCKER_ETCD_DATA_PATH}/etcd1.etcd"
+            ETCD_INITIAL_ADVERTISE_PEER_URLS: https://etcd1:2380
+            ETCD_ADVERTISE_CLIENT_URLS: https://etcd1:2379
+            ETCD_PEER_CERT_FILE: "${DOCKER_ETCD_CERTS_PATH}/etcd1.pem"
+            ETCD_PEER_KEY_FILE: "${DOCKER_ETCD_CERTS_PATH}/etcd1-key.pem"
+    etcd2:
+        extends:
+            file: base.yml
+            service: etcd-base
+        ports:
+            - 23792:2379
+            - 23802:2380
+        environment:
+            ETCD_NAME: node2
+            ETCD_DATA_DIR: "${DOCKER_ETCD_DATA_PATH}/etcd2.etcd"
+            ETCD_INITIAL_ADVERTISE_PEER_URLS: https://etcd2:2380
+            ETCD_ADVERTISE_CLIENT_URLS: https://etcd2:2379
+            ETCD_PEER_CERT_FILE: "${DOCKER_ETCD_CERTS_PATH}/etcd2.pem"
+            ETCD_PEER_KEY_FILE: "${DOCKER_ETCD_CERTS_PATH}/etcd2-key.pem"
+    etcd3:
+        extends:
+            file: base.yml
+            service: etcd-base
+        ports:
+            - 23793:2379
+            - 23803:2380
+        environment:
+            ETCD_NAME: node3
+            ETCD_DATA_DIR: "${DOCKER_ETCD_DATA_PATH}/etcd3.etcd"
+            ETCD_INITIAL_ADVERTISE_PEER_URLS: https://etcd3:2380
+            ETCD_ADVERTISE_CLIENT_URLS: https://etcd3:2379
+            ETCD_PEER_CERT_FILE: "${DOCKER_ETCD_CERTS_PATH}/etcd3.pem"
+            ETCD_PEER_KEY_FILE: "${DOCKER_ETCD_CERTS_PATH}/etcd3-key.pem"
