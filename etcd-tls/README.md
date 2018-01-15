@@ -1,3 +1,7 @@
+相关文档
+http://www.tianfeiyu.com/?p=2702
+https://github.com/hexfusion/etcd-compose-examples
+
 # etcd3集群
 
 1.start.sh变为可执行文件
