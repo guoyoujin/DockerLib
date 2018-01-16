@@ -1,16 +1,31 @@
 #!/bin/bash
-# brew install cfssl
-# sudo curl -s -L -o /bin/cfssl https://pkg.cfssl.org/R1.2/cfssl_linux-amd64
-# sudo curl -s -L -o /bin/cfssljson https://pkg.cfssl.org/R1.2/cfssljson_linux-amd64
-# sudo curl -s -L -o /bin/cfssl-certinfo https://pkg.cfssl.org/R1.2/cfssl-certinfo_linux-amd64
-# sudo chmod +x /bin/cfssl*
-# sudo cfssl -h
-# sudo cp -R certs $HOST_DATA_PATH
-# sudo chown -R etcd:etcd $HOST_DATA_PATH/certs/
-# sudo chmod 600 $HOST_DATA_PATH/certs/*-key.pem
+sysOS=`uname -s`
+if [ $sysOS == "Darwin" ];then
+	echo "I'm MacOS"
+	command -v cfssl >/dev/null 2>&1 || { 
+		echo " brew install cfssl ........."
+		brew install cfssl
+	}
+elif [ $sysOS == "Linux" ];then
+	echo "I'm Linux"
+	command -v cfssl >/dev/null 2>&1 || { 
+		curl -s -L -o /bin/cfssl https://pkg.cfssl.org/R1.2/cfssl_linux-amd64
+		chmod +x /usr/bin/cfssl
+	}
+	command -v cfssljson >/dev/null 2>&1 || { 
+		curl -s -L -o /bin/cfssljson https://pkg.cfssl.org/R1.2/cfssljson_linux-amd64
+		chmod +x /bin/cfssljson
+	}
+	command -v cfssl-certinfo >/dev/null 2>&1 || { 
+		curl -s -L -o /bin/cfssl-certinfo https://pkg.cfssl.org/R1.2/cfssl-certinfo_linux-amd64
+		chmod +x /bin/cfssl-certinfo
+	}
+else
+	echo "Other OS: $sysOS"
+fi
 export HOST_ETCD_CERTS_PATH=${PWD}/certs
 export HOST_ETCD_DATA_PATH=${PWD}/data 
-sudo chmod +x certs/start.sh
+chmod +x certs/start.sh
 cd certs
 ./start.sh
 cd ..
