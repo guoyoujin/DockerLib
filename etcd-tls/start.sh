@@ -9,16 +9,22 @@ if [ $sysOS == "Darwin" ];then
 elif [ $sysOS == "Linux" ];then
 	echo "I'm Linux"
 	command -v cfssl >/dev/null 2>&1 || { 
+		echo "install cfssl ......"
 		curl -s -L -o /bin/cfssl https://pkg.cfssl.org/R1.2/cfssl_linux-amd64
 		chmod +x /usr/bin/cfssl
+		echo "install cfssl success "
 	}
 	command -v cfssljson >/dev/null 2>&1 || { 
+		echo "install cfssljson ......"
 		curl -s -L -o /bin/cfssljson https://pkg.cfssl.org/R1.2/cfssljson_linux-amd64
 		chmod +x /bin/cfssljson
+		echo "install cfssljson success "
 	}
 	command -v cfssl-certinfo >/dev/null 2>&1 || { 
+		echo "install cfssl-certinfo ......"
 		curl -s -L -o /bin/cfssl-certinfo https://pkg.cfssl.org/R1.2/cfssl-certinfo_linux-amd64
 		chmod +x /bin/cfssl-certinfo
+		echo "install cfssl-certinfo success "
 	}
 else
 	echo "Other OS: $sysOS"
