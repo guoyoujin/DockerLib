@@ -4,6 +4,26 @@ http://www.tianfeiyu.com/?p=2702
 
 https://github.com/hexfusion/etcd-compose-examples
 
+项目依赖于docker-compose和docker，所以必须安装docker-compose和docker
+```shell
+LINUX
+
+    sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+
+    sudo chmod +x /usr/local/bin/docker-compose
+
+MAC
+
+    brew cask install docker
+
+    OR
+
+    brew install docker-compose 
+
+
+```
+
+
 # etcd3集群
 
 1.start.sh变为可执行文件
