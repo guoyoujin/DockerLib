@@ -1,9 +1,10 @@
 {
-    "CN": "travis1",
+    "CN": "server",
     "hosts": [
         "127.0.0.1",
         "localhost",
-        "47.104.98.21"
+        "0.0.0.0",
+        "server"
     ],
     "key": {
         "algo": "ecdsa",

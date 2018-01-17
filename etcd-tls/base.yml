@@ -10,7 +10,7 @@ services:
         environment:
             ETCDCTL_API: 3
             ETCD_DEBUG: 1
-            ETCD_INITIAL_CLUSTER: node3=https://etcd3:2380,node1=https://etcd1:2380,node2=https://etcd2:2380
+            ETCD_INITIAL_CLUSTER: "node1=${ETCD1_SERVER_IP}:${HOST_ETCD_DATA_PATH},node2=${ETCD2_SERVER_IP}:${HOST_ETCD_DATA_PATH},node3=${ETCD1_SERVER_IP}:${HOST_ETCD_DATA_PATH}"
             ETCD_INITIAL_CLUSTER_STATE: new
             ETCD_INITIAL_CLUSTER_TOKEN: etcd-ftw
             ETCD_LISTEN_CLIENT_URLS: https://0.0.0.0:2379

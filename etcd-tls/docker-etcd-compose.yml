@@ -6,13 +6,13 @@ services:
             file: base.yml
             service: etcd-base
         ports:
-             - 23791:2379
-             - 23801:2380
+             - "${ETCD1_ADVERTISE_PORT}:2379"
+             - "${ETCD1_LISTEN_PORT}:2380"
         environment:
             ETCD_NAME: node1
             ETCD_DATA_DIR: "${DOCKER_ETCD_DATA_PATH}/etcd1.etcd"
-            ETCD_INITIAL_ADVERTISE_PEER_URLS: https://etcd1:2380
-            ETCD_ADVERTISE_CLIENT_URLS: https://etcd1:2379
+            ETCD_INITIAL_ADVERTISE_PEER_URLS: "${ETCD1_SERVER_IP}:${ETCD1_LISTEN_PORT}"
+            ETCD_ADVERTISE_CLIENT_URLS: "${ETCD1_SERVER_IP}:${ETCD1_ADVERTISE_PORT}"
             ETCD_PEER_CERT_FILE: "${DOCKER_ETCD_CERTS_PATH}/etcd1.pem"
             ETCD_PEER_KEY_FILE: "${DOCKER_ETCD_CERTS_PATH}/etcd1-key.pem"
     etcd2:
@@ -20,13 +20,13 @@ services:
             file: base.yml
             service: etcd-base
         ports:
-            - 23792:2379
-            - 23802:2380
+            - "${ETCD2_ADVERTISE_PORT}:2379"
+            - "${ETCD2_LISTEN_PORT}:2380"
         environment:
             ETCD_NAME: node2
             ETCD_DATA_DIR: "${DOCKER_ETCD_DATA_PATH}/etcd2.etcd"
-            ETCD_INITIAL_ADVERTISE_PEER_URLS: https://etcd2:2380
-            ETCD_ADVERTISE_CLIENT_URLS: https://etcd2:2379
+            ETCD_INITIAL_ADVERTISE_PEER_URLS: "${ETCD2_SERVER_IP}:${ETCD2_LISTEN_PORT}"
+            ETCD_ADVERTISE_CLIENT_URLS: "${ETCD2_SERVER_IP}:${ETCD2_ADVERTISE_PORT}"
             ETCD_PEER_CERT_FILE: "${DOCKER_ETCD_CERTS_PATH}/etcd2.pem"
             ETCD_PEER_KEY_FILE: "${DOCKER_ETCD_CERTS_PATH}/etcd2-key.pem"
     etcd3:
@@ -34,12 +34,12 @@ services:
             file: base.yml
             service: etcd-base
         ports:
-            - 23793:2379
-            - 23803:2380
+            - "${ETCD3_ADVERTISE_PORT}:2379"
+            - "${ETCD3_LISTEN_PORT}:2380"
         environment:
             ETCD_NAME: node3
             ETCD_DATA_DIR: "${DOCKER_ETCD_DATA_PATH}/etcd3.etcd"
-            ETCD_INITIAL_ADVERTISE_PEER_URLS: https://etcd3:2380
-            ETCD_ADVERTISE_CLIENT_URLS: https://etcd3:2379
+            ETCD_INITIAL_ADVERTISE_PEER_URLS: "${ETCD3_SERVER_IP}:${ETCD3_LISTEN_PORT}"
+            ETCD_ADVERTISE_CLIENT_URLS: "${ETCD3_SERVER_IP}:${ETCD3_ADVERTISE_PORT}"
             ETCD_PEER_CERT_FILE: "${DOCKER_ETCD_CERTS_PATH}/etcd3.pem"
             ETCD_PEER_KEY_FILE: "${DOCKER_ETCD_CERTS_PATH}/etcd3-key.pem"
