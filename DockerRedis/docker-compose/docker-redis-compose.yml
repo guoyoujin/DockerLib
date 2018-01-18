@@ -1,0 +1,14 @@
+version: '2'
+services:
+
+    redis:
+        restart: unless-stopped
+        container_name: redis
+        hostname: redis
+        image: sameersbn/redis:latest
+        environment:
+          - "REDIS_PASSWORD=${REDIS_PASSWORD}"
+        ports:
+          - "${REDIS_ADVERTISE_PORT}:${REDIS_LISTEN_PORT}"
+        volumes:
+          - "${HOST_REDIS_DATA_PATH}:/var/lib/redis"

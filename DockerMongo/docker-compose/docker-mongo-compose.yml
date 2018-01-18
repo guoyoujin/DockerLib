@@ -1,0 +1,19 @@
+version: '2'
+services:
+
+    mongodb:
+        restart: unless-stopped
+        container_name: mongodb
+        hostname: mongodb
+        image: aashreys/mongo-auth:latest
+        environment:
+           - "AUTH=${AUTH}"
+           - "MONGODB_ADMIN_USER=${MONGODB_ADMIN_USER}"
+           - "MONGODB_ADMIN_PASS=${MONGODB_ADMIN_PASS}"
+           - "MONGODB_APPLICATION_DATABASE=${MONGODB_APPLICATION_DATABASE}"
+           - "MONGODB_APPLICATION_USER=${MONGODB_APPLICATION_USER}"
+           - "MONGODB_APPLICATION_PASS=${MONGODB_APPLICATION_PASS}"
+        ports:
+          - "${MONGO_ADVERTISE_PORT}:${MONGO_LISTEN_PORT}"
+        volumes:
+          - "${HOST_MONGO_DATA_PATH}:/data/db"
