@@ -1,0 +1,26 @@
+version: '2'
+services:
+
+    mysql:
+        restart: unless-stopped
+        container_name: mysql
+        hostname: mysql
+        image: mysql
+        environment:
+          - "MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}"
+          - "MYSQL_USER=${MYSQL_USER}"
+          - "MYSQL_PASSWORD=${MYSQL_PASSWORD}"
+          - "MYSQL_DATABASE=${MYSQL_DATABASE}"
+          - TZ={TZ}
+        command:
+          - --character-set-server=utf8mb4
+          - --collation-server=utf8mb4_unicode_ci
+          - --innodb-buffer-pool-size=1G
+          - --innodb-flush-log-at-trx-commit=0
+          - --innodb-log-file-size=1G
+          - --max-allowed-packet=100M
+        ports:
+          - "${MYSQL_ADVERTISE_PORT}:${MYSQL_LISTEN_PORT}"
+        volumes:
+          - "${HOST_MYSQL_DATA_PATH}:/var/lib/mysql"
+          - "${HOST_MYSQL_CONFIG_PATH}:/etc/mysql/conf.d"
