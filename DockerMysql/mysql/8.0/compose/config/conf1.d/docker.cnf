@@ -1,0 +1,31 @@
+[mysqld]
+sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES 
+
+
+#Replication Framework
+gtid_mode=ON
+enforce_gtid_consistency=ON
+master_info_repository=TABLE
+relay_log_info_repository=TABLE
+binlog_checksum=NONE
+log_slave_updates=ON
+log_bin=binlog
+binlog_format=ROW
+
+# Host specific replication configuration
+server_id=1
+report_host=172.25.0.2
+report_port=3306
+loose-group_replication_local_address ="172.25.0.2:3306"
+
+  
+#Group Replication  
+transaction_write_set_extraction=XXHASH64  
+loose-group_replication_group_name="aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"         
+loose-group_replication_start_on_boot=off  
+loose-group_replication_group_seeds="172.25.0.2:3306,172.25.0.3:3306"  
+loose-group_replication_bootstrap_group=off  
+loose-group_replication_ip_whitelist="172.25.0.0/16,172.25.0.1,172.25.0.2,172.25.0.3,127.0.0.1/8"
+
+# Custom config should go here
+!includedir /etc/mysql/conf.d/
