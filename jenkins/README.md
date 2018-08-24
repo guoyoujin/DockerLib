@@ -1,10 +1,10 @@
 相关文档
-https://github.com/sonatype/docker-nexus3
-https://hub.docker.com/r/sonatype/nexus3/
+https://hub.docker.com/r/jenkins/jenkins/
+https://github.com/jenkinsci/docker/blob/master/README.md
 
 
 
-# nexus3 maven仓库
+# jenkins搭建
 
 1.start.sh变为可执行文件
 ```shell

@@ -1,0 +1,14 @@
+version: '2'
+
+
+services:
+
+    nexus3-base:
+        image: sonatype/nexus3
+        restart: unless-stopped
+        #environment:
+        #    - "NEXUS_CONTEXT=nexus"
+        volumes:
+            - "${NUXUS_WORK}:/nexus-work/"
+            - "${NUXUS_DATA}:/nexus-data"
+        restart: unless-stopped # Sometimes it starts too fast, cheap way of retrying...
