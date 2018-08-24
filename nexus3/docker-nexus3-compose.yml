@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+    nexus3:
+        extends:
+            file: base.yml
+            service: nexus3-base
+        image: sonatype/nexus3
+        restart: unless-stopped
+        container_name: nexus3
+        hostname: nexus3
+        ports:
+            - "${NUXUS_ADVERTISE_PORT}:${NUXUS_LISTEN_PORT}"

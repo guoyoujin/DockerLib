@@ -2,6 +2,8 @@ website/bower_components
 website/node_modules
 website/.nuxt
 etcd-tls/data
+nexus3/data
+nexus3/work
 log
 .DS_Store
 
