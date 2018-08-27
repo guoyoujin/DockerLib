@@ -4,6 +4,7 @@ website/.nuxt
 etcd-tls/data
 nexus3/data
 nexus3/work
+jenkins/home
 log
 .DS_Store
 

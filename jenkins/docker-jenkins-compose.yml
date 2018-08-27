@@ -2,14 +2,13 @@ version: '2'
 
 services:
     jenkins:
-        image: jenkins
+        extends:
+            file: base.yml
+            service: jenkins-base
+        restart: unless-stopped
+        container_name: jenkins
+        hostname: jenkins
         ports:
             - 8080:8080
-        volumes:
-            - /var/run/docker.sock:/var/run/docker.sock
-            - /usr/local/bin/docker:/usr/bin/docker
-            - /opt/jenkins/:/var/lib/jenkins/
-        environment:
-            - NEXUS_PORT=8081
-            - SONAR_PORT=9000
-            - SONAR_DB_PORT=5432
+            - 50000:50000
+            

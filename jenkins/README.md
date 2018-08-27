@@ -18,11 +18,10 @@ chmod +x start.sh
 
 3.输入地址
 ```shell
-http://localhost:8081/
+http://localhost:8080/
 ```
 
 4.账户密码
 ```shell
-username：admin
-password：admin123
+cat /Users/guoyoujin/DockerLib/jenkins/home/secrets/initialAdminPassword   #注意你自己的根目录位置
 ```

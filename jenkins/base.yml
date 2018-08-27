@@ -3,12 +3,11 @@ version: '2'
 
 services:
 
-    nexus3-base:
-        image: sonatype/nexus3
+    jenkins-base:
+        image: jenkins/jenkins:lts
         restart: unless-stopped
         #environment:
         #    - "NEXUS_CONTEXT=nexus"
         volumes:
-            - "${NUXUS_WORK}:/nexus-work/"
-            - "${NUXUS_DATA}:/nexus-data"
+            - "${JENKINS_HOME}:/var/jenkins_home"
         restart: unless-stopped # Sometimes it starts too fast, cheap way of retrying...
