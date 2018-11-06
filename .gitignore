@@ -5,6 +5,12 @@ etcd-tls/data
 nexus3/data
 nexus3/work
 jenkins/home
+portainer/data
+rabbitmq/data
+DockerRedis/redis/data
+DockerRedis/redis/back_data
+DockerMysql/mysql5.6/data
+DockerMysql/mysql5.6/back_data
 log
 .DS_Store
 
