@@ -1,0 +1,18 @@
+version: '2'
+services:
+
+  redis:
+    restart: unless-stopped
+    container_name: redis
+    hostname: redis
+    image: redis:4.0.11-alpine
+    environment:
+      - "REDIS_PASSWORD=${REDIS_PASSWORD}"
+    ports:
+      - "${REDIS_ADVERTISE_PORT}:${REDIS_LISTEN_PORT}"
+    volumes:
+      - "${HOST_REDIS_DATA_PATH}:/data"
+      - "${HOST_REDIS_BACK_DATA_PATH}:/home/back_data"
+      - "${HOST_REDIS_CONFIG_PATH}:/usr/local/etc/redis/redis.conf"
+    command: redis-server /usr/local/etc/redis/redis.conf
+

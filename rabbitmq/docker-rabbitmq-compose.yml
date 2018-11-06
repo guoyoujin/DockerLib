@@ -1,0 +1,19 @@
+version: '2'
+services:
+
+  rabbitmq:
+    restart: unless-stopped
+    container_name: rabbitmq
+    image: "rabbitmq:3-management"
+    hostname: "rabbit"
+    ports:
+      - "${RABBITMQ_LISTEN_PORT}:${RABBITMQ_ADVERTISE_PORT}"
+      - "${RABBITMQ_LISTEN_TWO_PORT}:${RABBITMQ_ADVERTISE_TWO_PORT}"
+    labels:
+      NAME: "rabbitmq"
+    volumes:
+      - "${RABBITMQ_DATA_PATH}:/var/lib/rabbitmq"
+      - "${RABBITMQ_CONFIG_PATH}:/etc/rabbitmq/rabbitmq.config"
+    # environment:
+    #   - RABBITMQ_ERLANG_COOKIE='secret_cookie'
+

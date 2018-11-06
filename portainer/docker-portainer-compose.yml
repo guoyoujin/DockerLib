@@ -1,0 +1,21 @@
+version: '2'
+services:
+  
+  portainer:
+    restart: unless-stopped
+    container_name: portainer
+    hostname: portainer
+    image: portainer/portainer
+    networks:
+      - local
+    ports:
+      - "${PORTAINER_ADVERTISE_PORT}:${PORTAINER_LISTEN_PORT}"
+    volumes:
+      - "${PORTAINER_ADVERTISE_DOCKER_SOCK_PATH}:${PORTAINER_DOCKER_SOCK_PATH}"
+      - "${PORTAINER_DATA_PATH}:/data"
+    command: --templates http://templates/templates.json
+networks:
+  local:
+    driver: bridge
+
+
