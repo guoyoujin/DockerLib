@@ -2,7 +2,7 @@
 export HOST_MYSQL_DATA_PATH=${PWD}/data
 export HOST_MYSQL_CONFIG_PATH=${PWD}/config
 export HOST_MYSQL_BACK_DATA_PATH=${PWD}/back_data
-export MYSQL_ROOT_PASSWORD=bobao2016
+export MYSQL_ROOT_PASSWORD=guoyoujin
 export MYSQL_USER=root
 export MYSQL_DATABASE=neraex_development
 #before docker remove contain doing Backup Data
