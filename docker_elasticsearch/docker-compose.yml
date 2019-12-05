@@ -1,0 +1,42 @@
+version: '2.2'
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.3.2
+    container_name: es73
+    environment:
+      - cluster.name=letote-es73-cluster
+      - node.name=es73
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - discovery.seed_hosts=es73
+      - cluster.initial_master_nodes=es73
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - es73data1:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+    networks:
+      - es73net
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.3.2
+    container_name: kibana73
+    environment:
+      # - I18N_LOCALE=zh-CN
+      - XPACK_GRAPH_ENABLED=true
+      - TIMELION_ENABLED=true
+      - XPACK_MONITORING_COLLECTION_ENABLED="true"
+    ports:
+      - "5601:5601"
+    networks:
+      - es73net
+
+volumes:
+  es73data1:
+    driver: local
+
+networks:
+  es73net:
+    driver: bridge

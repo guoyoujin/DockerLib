@@ -30,8 +30,13 @@ docker commit -m "node 5.10.1" docker_node5.10.1 docker_node5.10.1  ##在容器d
 docker save -o 20161114_docker_node5.10.1.tar docker_node5.10.1 ###导出镜像
 
 ```
+### docker-compose常用命令
+```
+docker-compose -f sample.yml down 删除容器
 
-
+docker-compose -f sample.yml up 创建并启动所有容器
+docker-compose -f sample.yml up -d sample 创建并启动容器sample
+```
 
 # License
 

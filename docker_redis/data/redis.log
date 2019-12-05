@@ -1,0 +1,225 @@
+1:C 10 Sep 01:55:18.915 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 10 Sep 01:55:18.917 # Redis version=4.0.11, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 10 Sep 01:55:18.918 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 4.0.11 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 10 Sep 01:55:18.923 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 10 Sep 01:55:18.924 # Server initialized
+1:M 10 Sep 01:55:18.925 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 10 Sep 01:55:18.926 * Ready to accept connections
+1:C 17 Sep 09:42:41.672 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 17 Sep 09:42:41.674 # Redis version=4.0.11, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 17 Sep 09:42:41.676 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 4.0.11 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 17 Sep 09:42:41.682 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 17 Sep 09:42:41.684 # Server initialized
+1:M 17 Sep 09:42:41.685 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 17 Sep 09:42:41.688 * Ready to accept connections
+1:C 08 Oct 07:08:04.256 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Oct 07:08:04.258 # Redis version=4.0.11, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Oct 07:08:04.259 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 4.0.11 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 08 Oct 07:08:04.263 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 08 Oct 07:08:04.264 # Server initialized
+1:M 08 Oct 07:08:04.266 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 08 Oct 07:08:04.267 * Ready to accept connections
+1:C 12 Oct 03:54:43.129 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 12 Oct 03:54:43.132 # Redis version=4.0.11, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 12 Oct 03:54:43.134 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 4.0.11 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 12 Oct 03:54:43.139 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 12 Oct 03:54:43.141 # Server initialized
+1:M 12 Oct 03:54:43.142 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 12 Oct 03:54:43.143 * Ready to accept connections
+1:C 16 Oct 01:31:55.199 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 16 Oct 01:31:55.201 # Redis version=4.0.11, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 16 Oct 01:31:55.203 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 4.0.11 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 16 Oct 01:31:55.212 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 16 Oct 01:31:55.213 # Server initialized
+1:M 16 Oct 01:31:55.215 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 16 Oct 01:31:55.217 * Ready to accept connections
+1:C 30 Oct 05:32:02.477 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 30 Oct 05:32:02.481 # Redis version=4.0.11, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 30 Oct 05:32:02.482 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 4.0.11 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 30 Oct 05:32:02.487 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 30 Oct 05:32:02.489 # Server initialized
+1:M 30 Oct 05:32:02.491 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 30 Oct 05:32:02.494 * Ready to accept connections
+1:C 03 Nov 10:11:31.273 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 03 Nov 10:11:31.276 # Redis version=4.0.11, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 03 Nov 10:11:31.278 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 4.0.11 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 03 Nov 10:11:31.283 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 03 Nov 10:11:31.284 # Server initialized
+1:M 03 Nov 10:11:31.286 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 03 Nov 10:11:31.288 * Ready to accept connections
+1:C 08 Nov 01:30:21.358 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Nov 01:30:21.361 # Redis version=4.0.11, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Nov 01:30:21.362 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 4.0.11 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 08 Nov 01:30:21.368 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 08 Nov 01:30:21.369 # Server initialized
+1:M 08 Nov 01:30:21.371 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 08 Nov 01:30:21.373 * Ready to accept connections
+1:C 18 Nov 08:07:35.834 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 18 Nov 08:07:35.837 # Redis version=4.0.11, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 18 Nov 08:07:35.838 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 4.0.11 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 18 Nov 08:07:35.842 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 18 Nov 08:07:35.843 # Server initialized
+1:M 18 Nov 08:07:35.844 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 18 Nov 08:07:35.845 * Ready to accept connections
