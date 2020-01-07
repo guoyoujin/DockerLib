@@ -12,5 +12,6 @@ DockerRedis/redis/back_data
 DockerMysql/mysql5.6/data
 DockerMysql/mysql5.6/back_data
 log
+docker_redis/data
 .DS_Store
 
